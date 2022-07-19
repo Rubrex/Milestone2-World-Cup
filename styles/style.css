@@ -1,13 +1,38 @@
+/* Dependencies */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap");
+/* Reset Default Values */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Common Styles and utilities*/
+body {
+  font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 .wrapper {
+  width: 80%;
 }
 
+/* ==========================
+        Header Section
+========================*/
 .hero {
+  display: flex;
+  padding: 50px 100px;
 }
 
 .hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .watch-live {
+  width: 180px;
+  height: 60px;
+  background-color: #dd0000;
+  color: rgb(245, 245, 245);
 }
 
 .fa-solid.fa-angles-right {
