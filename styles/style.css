@@ -54,8 +54,8 @@ hr {
 }
 .ball {
   position: relative;
-  top: 100px;
-  left: 56%;
+  top: 140px;
+  left: -50px;
   animation: ball-bouncing 1s ease-in-out infinite;
 }
 .ball img {
@@ -116,7 +116,7 @@ hr {
   position: relative;
   transform: translate(10px);
 }
-.hero-image img {
+.hero-image > img {
   width: 380px;
   height: 432px;
   position: relative;
@@ -311,17 +311,19 @@ hr {
     padding: 40px;
     overflow: hidden;
   }
+
   .hero-title p {
     font-size: 1em;
   }
   .hero-title h1 {
     font-size: 3.5em;
   }
-  .hero-image img {
+  .hero-image > img {
     width: 323px;
     height: 340px;
     top: 70px;
   }
+
   .watch-live,
   .view-all {
     width: 160px;
