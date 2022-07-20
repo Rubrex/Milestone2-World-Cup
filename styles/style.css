@@ -88,9 +88,6 @@ hr {
   background-color: #ff0000;
 }
 
-.fa-solid.fa-angles-right {
-}
-
 .hero-image img {
   width: 581px;
   height: 613px;
@@ -259,6 +256,7 @@ hr {
 ========================*/
 
 /* Tablet View */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .wrapper {
     width: 95%;
@@ -319,6 +317,8 @@ hr {
     line-height: 60px;
   }
 }
+
+/* Mobile View */
 
 @media only screen and (max-width: 767px) {
   .wrapper {
