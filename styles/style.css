@@ -52,7 +52,15 @@ hr {
   overflow: hidden;
   margin-top: 40px;
 }
-
+.ball {
+  position: relative;
+  top: 100px;
+  left: 56%;
+  animation: ball-bouncing 1s ease-in-out infinite;
+}
+.ball img {
+  animation: ball-rotating 1.5s linear infinite;
+}
 .hero-title {
   display: flex;
   flex-direction: column;
@@ -112,7 +120,7 @@ hr {
   width: 380px;
   height: 432px;
   position: relative;
-  top: 20px;
+  top: 50px;
 }
 
 /* ==========================
@@ -272,6 +280,23 @@ hr {
     letter-spacing: 10px;
   }
 }
+@keyframes ball-bouncing {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(10px, 20px);
+  }
+}
+@keyframes ball-rotating {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* ==========================
     Responsive Breakpoints 
 ========================*/
@@ -342,6 +367,9 @@ hr {
 /* Mobile View */
 
 @media only screen and (max-width: 767px) {
+  .ball {
+    display: none;
+  }
   .wrapper {
     width: 95%;
   }
@@ -408,9 +436,9 @@ hr {
   }
 }
 
-/* 
+/* =========================
         Matches.html
-*/
+======================*/
 .match {
   padding: 40px 20px;
   text-align: center;
