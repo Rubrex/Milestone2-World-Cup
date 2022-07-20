@@ -19,7 +19,8 @@ body {
   font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .wrapper {
-  width: 1321px;
+  width: 95%;
+  max-width: 1320px;
   margin: 0 auto;
 }
 main {
@@ -63,9 +64,9 @@ hr {
   color: var(--light-white);
 }
 .hero-title h1 {
-  font-size: 60px;
+  font-size: 5em;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 1em;
 }
 .hero-title p {
   font-size: 20px;
@@ -144,8 +145,8 @@ hr {
 }
 
 .blog {
-  width: 312px;
-  height: 362px;
+  /* width: 312px; */
+  /* height: 362px; */
   display: flex;
   flex-direction: column;
   border-radius: var(--radius);
@@ -225,7 +226,7 @@ hr {
 .footer-social-icons a {
   color: var(--light-white);
   font-size: 40px;
-  margin-right: 20px;
+  margin-right: 40px;
   cursor: pointer;
   transition: 300ms;
 }
@@ -247,5 +248,61 @@ hr {
   }
   50% {
     letter-spacing: 10px;
+  }
+}
+/* ==========================
+    Responsive Breakpoints 
+========================*/
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 95%;
+  }
+  .hero {
+    padding: 40px;
+    overflow: hidden;
+  }
+  .hero-title p {
+    font-size: 1em;
+  }
+  .hero-title h1 {
+    font-size: 3.5em;
+  }
+  .hero-image img {
+    width: 323px;
+    height: 340px;
+    top: 70px;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .navlink {
+    width: 230px;
+    height: 64px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-links {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .footer-links ul {
+    flex-wrap: wrap;
+  }
+  .footer-links ul li {
+    line-height: 60px;
   }
 }
