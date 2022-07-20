@@ -309,7 +309,7 @@ hr {
 
 @media only screen and (max-width: 767px) {
   .wrapper {
-    width: 100%;
+    width: 95%;
   }
   .hero {
     padding: 38px;
@@ -330,5 +330,46 @@ hr {
   }
   .watch-live {
     margin: 0 auto;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .nav {
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .navlink {
+    width: 230px;
+    height: 64px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+  }
+  .blogs {
+    grid-template-columns: 1fr;
+  }
+  .footer-links {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer-links ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .footer-links ul li {
+    line-height: 60px;
+  }
+  .footer-social-icons {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    justify-content: center;
+    gap: 40px;
   }
 }
