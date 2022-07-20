@@ -73,7 +73,8 @@ hr {
   font-weight: 300;
 }
 
-.watch-live {
+.watch-live,
+.view-all {
   width: 187px;
   height: 56px;
   background-color: var(--primary-color);
@@ -198,6 +199,9 @@ hr {
 .duration {
   margin-right: 20px;
 }
+.view-all {
+  display: none;
+}
 /* ==========================
         Footer Section
 ========================*/
@@ -274,6 +278,11 @@ hr {
     height: 340px;
     top: 70px;
   }
+  .watch-live,
+  .view-all {
+    width: 160px;
+    height: 48px;
+  }
   main {
     flex-direction: column;
     align-items: center;
@@ -294,6 +303,10 @@ hr {
   }
   .blogs {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .view-all {
+    display: block;
+    margin-top: 30px;
   }
   .footer-links {
     width: 80%;
