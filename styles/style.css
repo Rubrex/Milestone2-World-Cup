@@ -121,7 +121,7 @@ hr {
   cursor: pointer;
 }
 .navlink:active,
-.navlink:visited {
+.navlink:focus {
   background-color: var(--primary-color);
   color: var(--light-white);
 }
@@ -140,6 +140,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  width: 100%;
 }
 
 .blog {
@@ -399,6 +400,9 @@ hr {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 10px;
+}
+.flags img {
+  width: 50%;
 }
 .flags b {
   margin: 0 10px;
