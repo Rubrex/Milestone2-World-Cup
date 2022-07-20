@@ -386,3 +386,27 @@ hr {
     gap: 40px;
   }
 }
+
+/* 
+        Matches.html
+*/
+.match {
+  padding: 40px 20px;
+  text-align: center;
+}
+.flags {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.flags b {
+  margin: 0 10px;
+}
+.match-participants {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.match-time {
+  font-size: 16px;
+}
